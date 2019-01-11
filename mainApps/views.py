@@ -6,11 +6,13 @@ from .models import *
 
 def home_view(request):
     accounts = Account.objects.all()
+    boxes = Box.objects.all()
     for obj in accounts:
         print(obj.amount)
     return render(request, "mainApps/home.html" , {
         'loggedin' : request.user.is_authenticated,
-        'accounts' : accounts
+        'accounts' : accounts,
+        'boxes' : boxes,
     })
 
 

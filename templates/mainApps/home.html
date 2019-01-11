@@ -6,8 +6,16 @@
       <h2>About Us</h2>
       <h5>Photo of me:</h5>
       {% if loggedin %}
+      <h3> Account </h3>
       {% for account in accounts %}
        <span> User Amount: </span>{{account.amount}}
+      {% endfor %}
+      <h3> Boxes </h3>
+      {% for box in boxes %}
+      <div class="m-3">
+        <span> Box name: </span>{{box.name}} <br>
+        <span> Box price: </span>{{box.price}} <br>
+      </div>
       {% endfor %}
       {% endif %}
     </div>
