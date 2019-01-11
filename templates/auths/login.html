@@ -1,0 +1,14 @@
+{% extends 'layout/layout.html' %}
+{% block content %}
+<div class="container pt-5">
+    <h1> Login </h1>
+  <form class="form" method="POST">
+      {% csrf_token %}
+      <label>Email address:</label>
+      <input type="email" class="form-control" name="email">
+      <label>Password:</label>
+      <input type="password" class="form-control" name="password">
+      <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+</div>
+{% endblock %}
