@@ -19,18 +19,22 @@ def home_view(request):
 @login_required
 def account_view(request):
     info = None
+    amount = None
     user = request.user
     account = Account.objects.filter(user=user).first()
     if account:
-        info = account.amount
+        amount = account.amount
     if request.method == "POST":
-        amount = float(request.POST['amount'])
-        account = Account()
-        account.user = user
-        account.amount = amount
-        account.save()
-        info = amount
-    return render(request, "mainApps/profile.html" ,{'info' : info, 'user' : request.user})
+        if request.POST['amount'] == '':
+            info = "Please enter amount"
+        else:
+            amount = float(request.POST['amount'])
+            account = Account()
+            account.user = user
+            account.amount = amount
+            account.save()
+            amount = amount
+    return render(request, "mainApps/profile.html" ,{'amount':amount, 'info' : info, 'user' : request.user})
 
 @login_required
 def box_view(request):
