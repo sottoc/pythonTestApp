@@ -22,6 +22,7 @@ def account_view(request):
     amount = None
     user = request.user
     account = Account.objects.filter(user=user).first()
+    boxes = Box.objects.filter(account=account)
     if account:
         amount = account.amount
     if request.method == "POST":
@@ -34,7 +35,7 @@ def account_view(request):
             account.amount = amount
             account.save()
             amount = amount
-    return render(request, "mainApps/profile.html" ,{'amount':amount, 'info' : info, 'user' : request.user})
+    return render(request, "mainApps/profile.html" ,{'amount':amount, 'info' : info, 'boxes': boxes, 'user' : request.user})
 
 @login_required
 def box_view(request):

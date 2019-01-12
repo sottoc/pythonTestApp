@@ -2,8 +2,21 @@
 {% block content %}
 <div class="container p-5">
     {% if amount %}
-    <div class="warning">  Amount: <span style="color:red"> ${{amount}} </span> </div>
+    <h4> Amount: </h4>
+    <div class="ml-3">
+        <span style="color:red"> ${{amount}} </span>
+    </div>
+    <br>
+    <h4> Boxes: </h4>
+    <div class="ml-3">
+    {% if boxes.count == 0 %}
+        <span style="color:#c14949"> No boxes </span>
+    {% endif %}
+    {% for box in boxes %}
+    <div> {{forloop.counter}}. {{box.name}} : <span style="color:#c14949"> ${{box.price}} </span> </div>
+    {% endfor %}
     {% else %}
+    </div>
     <form method="post">
         {% csrf_token %}
         <div class="form-group">
