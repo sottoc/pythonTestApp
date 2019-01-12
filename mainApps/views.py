@@ -38,19 +38,27 @@ def account_view(request):
 
 @login_required
 def box_view(request):
+    info_name = None
+    info_price = None
     if request.method == 'POST':
-        box_name = request.POST['box-name']
-        box_price = float(request.POST['box-price'])
-        user = request.user
-        account = Account.objects.filter(user=user).first()
-        box = Box()
-        box.name = box_name
-        box.price = box_price
-        box.account = account
-        box.save()
-        print(box_name)
-        print(box_price)
-        return redirect('/')
-    return render(request, "mainApps/box.html", {'user' : request.user})
+        if request.POST['box-name'] == "":
+            info_name = "Please enter box name"
+        else:
+            if request.POST['box-price'] == "":
+                info_price = "Please enter box price"
+            else:
+                box_name = request.POST['box-name']
+                box_price = float(request.POST['box-price'])
+                user = request.user
+                account = Account.objects.filter(user=user).first()
+                box = Box()
+                box.name = box_name
+                box.price = box_price
+                box.account = account
+                box.save()
+                print(box_name)
+                print(box_price)
+                return redirect('/')
+    return render(request, "mainApps/box.html", {'user' : request.user, 'info_name':info_name, 'info_price': info_price})
 
 
