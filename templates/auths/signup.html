@@ -4,13 +4,22 @@
     <h1> Sign Up </h1>
     <form class="form" method="POST">
         {% csrf_token %}
-        <label>Email address:</label>
-        <input type="email" class="form-control" name="email">
-      <label>Password:</label>
-      <input type="password" class="form-control" name="password">
-        <label>Name:</label>
-      <input type="text" class="form-control" name="firstname">
-      <button type="submit" class="btn btn-primary">Sign Up</button>
+        <div class="form-group">
+            <span> Email </span>
+            <input type="email" class="form-control" name="email" placeholder="Email">
+            <span style="color:red"> {{error}} </span>
+        </div>
+        <div class="form-group">
+            <span> Password </span>
+            <input type="password" class="form-control" name="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <span> Name </span>
+            <input type="text" class="form-control" name="firstname" placeholder="Name">
+        </div>
+       <div class="form-group">
+           <button type="submit" class="btn btn-primary">Sign Up</button>
+       </div>
     </form>
 </div>
 {% endblock %}

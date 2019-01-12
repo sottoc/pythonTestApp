@@ -25,7 +25,7 @@ def signup_view(request):
         lastname = ""
         users = User.objects.filter(email__iexact=email).first()
         if users:
-            return render(request, "auths/signup.html", {'error' : "Email is already existed!"})
+            return render(request, "auths/signup.html", {'error' : "This email is already existed!"})
         user = User()
         user.email = email
         user.set_password(password)
@@ -33,7 +33,8 @@ def signup_view(request):
         user.last_name = lastname
         user.save()
         print(email)
-    return render(request, "auths/signup.html")
+        return redirect('/')
+    return render(request, "auths/signup.html", {'error' : ""})
 
 def logout_view(request):
     logout(request)
