@@ -2,7 +2,7 @@
 {% block content %}
 <div class="container p-5">
     {% if amount %}
-    <div class="warning">  Amount: <span style="color:red"> ${{info}} </span> </div>
+    <div class="warning">  Amount: <span style="color:red"> ${{amount}} </span> </div>
     {% else %}
     <form method="post">
         {% csrf_token %}
