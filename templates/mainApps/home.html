@@ -4,17 +4,19 @@
   <div class="row">
     <div class="col-sm-12">
       <h2>About Us</h2>
-      <h5>Photo of me:</h5>
-      {% if loggedin %}
+      <p> Thanks for your consideration </p>
+      {% if user.is_authenticated %}
       <h3> Account </h3>
       {% for account in accounts %}
-       <span> User Amount: </span>{{account.amount}}
+       <div class="m-1">
+         <span> User Amount: </span> ${{account.amount}}
+       </div>
       {% endfor %}
-      <h3> Boxes </h3>
+      <h3 class="mt-3"> Boxes </h3>
       {% for box in boxes %}
       <div class="m-3">
         <span> Box name: </span>{{box.name}} <br>
-        <span> Box price: </span>{{box.price}} <br>
+        <span> Box price: </span> ${{box.price}} <br>
       </div>
       {% endfor %}
       {% endif %}

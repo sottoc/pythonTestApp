@@ -10,7 +10,7 @@ def home_view(request):
     for obj in accounts:
         print(obj.amount)
     return render(request, "mainApps/home.html" , {
-        'loggedin' : request.user.is_authenticated,
+        'user' : request.user,
         'accounts' : accounts,
         'boxes' : boxes,
     })
@@ -22,15 +22,15 @@ def account_view(request):
     if request.method == "POST":
         amount = float(request.POST['amount'])
         user = request.user
-        accounts = Account.objects.all()
-        if len(accounts) > 0:
+        accounts = Account.objects.filter(user=user).first()
+        if accounts:
             error = "Account is already existed."
         else:
             account = Account()
             account.user = user
             account.amount = amount
             account.save()
-    return render(request, "mainApps/profile.html" ,{'error' : error, 'loggedin' : request.user.is_authenticated})
+    return render(request, "mainApps/profile.html" ,{'error' : error, 'user' : request.user})
 
 @login_required
 def box_view(request):
@@ -47,6 +47,6 @@ def box_view(request):
         print(box_name)
         print(box_price)
         return redirect('/')
-    return render(request, "mainApps/box.html", {'loggedin' : request.user.is_authenticated})
+    return render(request, "mainApps/box.html", {'user' : request.user})
 
 
