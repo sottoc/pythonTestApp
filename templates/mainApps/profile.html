@@ -1,9 +1,9 @@
 {% extends 'layout/layout.html' %}
 {% block content %}
 <div class="container p-5">
-    {% if error %}
-    <div class="warning">{{error}}</div>
-    {% endif %}
+    {% if info %}
+    <div class="warning"> <span> Amount: </span> ${{info}} </div>
+    {% else %}
     <form method="post">
         {% csrf_token %}
         <div class="form-group">
@@ -13,5 +13,6 @@
             <input type="submit" class="btn btn-primary" value="Create">
         </div>
     </form>
+    {% endif %}
 </div>
 {% endblock %}

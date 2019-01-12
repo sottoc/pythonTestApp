@@ -6,17 +6,16 @@
       <h2>About Us</h2>
       <p> Thanks for your consideration </p>
       {% if user.is_authenticated %}
-      <h3> Account </h3>
+      <h3> All amount </h3>
       {% for account in accounts %}
        <div class="m-1">
-         <span> User Amount: </span> ${{account.amount}}
+         <span> {{forloop.counter}}. Amount: </span> ${{account.amount}}
        </div>
       {% endfor %}
       <h3 class="mt-3"> Boxes </h3>
       {% for box in boxes %}
       <div class="m-3">
-        <span> Box name: </span>{{box.name}} <br>
-        <span> Box price: </span> ${{box.price}} <br>
+        <li>  Box name: <span style="color:#1d79dc"> {{box.name}} </span>,  Box price: <span style="color:#c14949"> ${{box.price}} </span> </li>
       </div>
       {% endfor %}
       {% endif %}

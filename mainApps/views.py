@@ -18,19 +18,19 @@ def home_view(request):
 
 @login_required
 def account_view(request):
-    error = None
+    info = None
+    user = request.user
+    account = Account.objects.filter(user=user).first()
+    if account:
+        info = account.amount
     if request.method == "POST":
         amount = float(request.POST['amount'])
-        user = request.user
-        accounts = Account.objects.filter(user=user).first()
-        if accounts:
-            error = "Account is already existed."
-        else:
-            account = Account()
-            account.user = user
-            account.amount = amount
-            account.save()
-    return render(request, "mainApps/profile.html" ,{'error' : error, 'user' : request.user})
+        account = Account()
+        account.user = user
+        account.amount = amount
+        account.save()
+        info = amount
+    return render(request, "mainApps/profile.html" ,{'info' : info, 'user' : request.user})
 
 @login_required
 def box_view(request):
