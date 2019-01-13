@@ -13,14 +13,39 @@
        </div>
       {% endfor %}
       <h3 class="mt-3"> Boxes </h3>
-      {% for box in boxes %}
-      <div class="m-3">
-        <li>  Box name: <span style="color:#1d79dc"> {{box.name}} </span>,  Box price: <span style="color:#c14949"> ${{box.price}} </span> </li>
+      <div class="row">
+        {% for box in boxes %}
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="box-name">
+                    {{box.name}}
+                </div>
+              Box name: <span style="color:#1d79dc"> {{box.name}} </span>,  Box price: <span style="color:#c14949"> ${{box.price}} </span>
+            </div>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
       {% endif %}
     </div>
 
   </div>
 </div>
+<style>
+.thumbnail {
+    position: relative;
+    margin-bottom: 20px;
+    border: #9453b7 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    background: #eef9f5;
+}
+.thumbnail:hover{
+  background:#ffe0c7;
+  cursor:pointer;
+}
+.thumbnail .box-name{
+    text-align:center;
+    font-size: 30px;
+}
+</style>
 {% endblock %}
