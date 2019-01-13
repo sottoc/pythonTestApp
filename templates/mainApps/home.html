@@ -7,12 +7,14 @@
       <p> Thanks for your consideration </p>
       {% if user.is_authenticated %}
       <h3> All amount </h3>
-      {% for account in accounts %}
-       <div class="m-1">
-         <span> {{forloop.counter}}. Amount: </span> ${{account.amount}}
-       </div>
+      {% for item in account_list %}
+        {% if item.0 %}
+         <div class="m-1">
+           User <span style="color:red"> {{item.1}}: </span>  <span style="color:#c14949"> ${{item.0.amount}} </span> <span style="color:#8e6f6f"> ({{item.2}}) </span>
+         </div>
+        {% endif %}
       {% endfor %}
-      <h3 class="mt-3"> Boxes </h3>
+      <h3 class="mt-3"> All Boxes </h3>
       <div class="row">
         {% for box in boxes %}
         <div class="col-sm-6 col-md-4">

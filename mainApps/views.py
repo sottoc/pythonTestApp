@@ -5,6 +5,13 @@ from .models import *
 
 
 def home_view(request):
+    account_list = []
+    users = User.objects.all()
+    for user in users:
+        account = Account.objects.filter(user=user).first()
+        name = user.first_name
+        email = user.email
+        account_list.append([account, name, email])
     accounts = Account.objects.all()
     boxes = Box.objects.all()
     for obj in accounts:
@@ -12,6 +19,7 @@ def home_view(request):
     return render(request, "mainApps/home.html" , {
         'user' : request.user,
         'accounts' : accounts,
+        'account_list' : account_list,
         'boxes' : boxes,
     })
 
