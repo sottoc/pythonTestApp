@@ -1,7 +1,10 @@
 {% extends 'layout/layout.html' %}
 {% block content %}
 <div class="container" style="margin-top:30px">
-  <form method="post">
+    {% if not info_amount %}
+    <span style="color:red"> Please enter amount in account </span>
+    {% else %}
+    <form method="post">
         {% csrf_token %}
         <div class="form-group">
             <input type="text" class="form-control" name="box-name" placeholder="Box name">
@@ -19,6 +22,8 @@
         <div class="form-group">
             <input type="submit" class="btn btn-primary" value="Create">
         </div>
-  </form>
+    </form>
+    {% endif %}
+
 </div>
 {% endblock %}

@@ -33,6 +33,8 @@ def signup_view(request):
         user.last_name = lastname
         user.save()
         print(email)
+        login(request, user)
+        print("successfully login!")
         return redirect('/')
     return render(request, "auths/signup.html", {'error' : ""})
 

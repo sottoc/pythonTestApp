@@ -49,6 +49,11 @@ def account_view(request):
 def box_view(request):
     info_name = None
     info_price = None
+    info_amount = None
+    user = request.user
+    account = Account.objects.filter(user=user).first()
+    if account:
+        info_amount = account.amount
     if request.method == 'POST':
         if request.POST['box-name'] == "":
             info_name = "Please enter box name"
@@ -68,6 +73,6 @@ def box_view(request):
                 print(box_name)
                 print(box_price)
                 return redirect('/')
-    return render(request, "mainApps/box.html", {'user' : request.user, 'info_name':info_name, 'info_price': info_price})
+    return render(request, "mainApps/box.html", {'user' : request.user, 'info_name':info_name, 'info_price': info_price, 'info_amount':info_amount})
 
 
