@@ -23,25 +23,6 @@ def home_view(request):
         'boxes' : boxes,
     })
 
-def template_view(request):
-    account_list = []
-    users = User.objects.all()
-    for user in users:
-        account = Account.objects.filter(user=user).first()
-        name = user.first_name
-        email = user.email
-        account_list.append([account, name, email])
-    accounts = Account.objects.all()
-    boxes = Box.objects.all()
-    for obj in accounts:
-        print(obj.amount)
-    return render(request, "layout/layout1.html", {
-        'user': request.user,
-        'accounts': accounts,
-        'account_list': account_list,
-        'boxes': boxes,
-    })
-
 @login_required
 def account_view(request):
     info = None
