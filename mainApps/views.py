@@ -23,6 +23,24 @@ def home_view(request):
         'boxes' : boxes,
     })
 
+def template_view(request):
+    account_list = []
+    users = User.objects.all()
+    for user in users:
+        account = Account.objects.filter(user=user).first()
+        name = user.first_name
+        email = user.email
+        account_list.append([account, name, email])
+    accounts = Account.objects.all()
+    boxes = Box.objects.all()
+    for obj in accounts:
+        print(obj.amount)
+    return render(request, "layout/layout1.html", {
+        'user': request.user,
+        'accounts': accounts,
+        'account_list': account_list,
+        'boxes': boxes,
+    })
 
 @login_required
 def account_view(request):
@@ -75,4 +93,6 @@ def box_view(request):
                 return redirect('/')
     return render(request, "mainApps/box.html", {'user' : request.user, 'info_name':info_name, 'info_price': info_price, 'info_amount':info_amount})
 
+def about_view(request):
+    return render(request, "mainApps/about.html")
 
