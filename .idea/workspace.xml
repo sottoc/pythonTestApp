@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2c686f6-c784-4268-9229-06fb0f62e5d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/layout/layout1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout/layout1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout/layout2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout/layout2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/home3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/home3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/home5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/home5.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mainApps/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainApps/home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/mainApps/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="231">
+              <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -43,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/layout/layout1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="90" column="80" lean-forward="true" selection-start-line="90" selection-start-column="52" selection-end-line="90" selection-end-column="80" />
+            <state relative-caret-position="273">
+              <caret line="91" column="20" lean-forward="true" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -56,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/layout/layout2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="99" column="72" selection-start-line="99" selection-start-column="72" selection-end-line="99" selection-end-column="72" />
+            <state relative-caret-position="26">
+              <caret line="90" column="17" lean-forward="true" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -148,8 +148,8 @@
         <option value="$PROJECT_DIR$/mainApps/views.py" />
         <option value="$PROJECT_DIR$/mainApps/urls.py" />
         <option value="$PROJECT_DIR$/templates/layout/layout1.html" />
-        <option value="$PROJECT_DIR$/templates/mainApps/home.html" />
         <option value="$PROJECT_DIR$/templates/layout/layout2.html" />
+        <option value="$PROJECT_DIR$/templates/mainApps/home.html" />
       </list>
     </option>
   </component>
@@ -186,6 +186,12 @@
               <item name="Testpro" type="b2602c69:ProjectViewProjectNode" />
               <item name="Testpro" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Testpro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Testpro" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Testpro" type="b2602c69:ProjectViewProjectNode" />
@@ -273,7 +279,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5007776" side_tool="true" weight="0.1871036" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4992224" visible="true" weight="0.1871036" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4992224" visible="true" weight="0.1871036" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -282,7 +288,7 @@
       <window_info anchor="bottom" id="Find" order="4" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="5" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Debug" order="7" visible="true" weight="0.2831661" />
+      <window_info anchor="bottom" id="Debug" order="7" visible="true" weight="0.2831661" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -531,10 +537,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout/layout2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="90" column="17" lean-forward="true" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/mainApps/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="231">
+          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -545,19 +562,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/layout/layout1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="90" column="80" lean-forward="true" selection-start-line="90" selection-start-column="52" selection-end-line="90" selection-end-column="80" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layout/layout2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="99" column="72" selection-start-line="99" selection-start-column="72" selection-end-line="99" selection-end-column="72" />
+        <state relative-caret-position="273">
+          <caret line="91" column="20" lean-forward="true" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
