@@ -1,5 +1,7 @@
 # pythonTestApp
 
+Commit for verification :)
+
 Site will be similar (in some aspects) to https://mysterybrand.net, so you can refer to it if you have any questions for this test task.
 
 Pick the python framework of you choice (for example Django)

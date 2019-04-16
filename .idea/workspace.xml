@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2c686f6-c784-4268-9229-06fb0f62e5d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/static/img/home3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/home3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/home5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/home5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mainApps/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainApps/home.html" afterDir="false" />
-    </list>
+    <list default="true" id="a2c686f6-c784-4268-9229-06fb0f62e5d3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/layout/layout1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="91" column="20" lean-forward="true" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+            <state relative-caret-position="189">
+              <caret line="87" column="17" lean-forward="true" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -288,7 +284,7 @@
       <window_info anchor="bottom" id="Find" order="4" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="5" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="7" visible="true" weight="0.2831661" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.2831661" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -562,8 +558,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/layout/layout1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="91" column="20" lean-forward="true" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+        <state relative-caret-position="189">
+          <caret line="87" column="17" lean-forward="true" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
